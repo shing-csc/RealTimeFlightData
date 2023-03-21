@@ -1,0 +1,44 @@
+<!-- THIS IS THE HTML FILE FOR ASSIGNMENT 3 OF 3322 -->
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Linking to the css file -->
+    <link rel='stylesheet' type="text/css" href='styles.css'>
+    <meta charset="utf-8">
+    <!-- For the use of mobile version @media -->
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+
+</head>
+<body>
+    <h1 id = "large_title"> Hong Kong International Airport Flight Information </h1>
+    
+    <!-- Need to use DOM to add the real time date inside the text -->
+    <h3 id = "date"></h3> 
+    <script>
+        document.getElementById("date").innerHTML = Date().slice(0,15);
+    </script>
+    
+     
+    <!-- Using the label to wrap the checkbox and slider-->
+    <div class = "wall">
+        <label class="switch">
+            <input type="checkbox" id = 'switchJavascript'> 
+                <span class="slider"> </span>
+        
+        </label>
+    </div>
+    <h4 id="automation"> Departure/Arrvial Information </h4>
+    
+    
+    <!-- 
+    <a href="basedOnJS" class="early_flights"> Load Early Flights </a> 
+    <a href="basedOnJS" class="more_flights"> Load More Flights </a> 
+    -->
+    
+    <script defer src="main.js"></script>
+    <div id = "lists"> </div>
+    <div id = "last"> </div>
+   
+
+</body>
+</html>
